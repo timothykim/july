@@ -115,6 +115,7 @@ july.lex = function (tokens) {
             };
         }
 
+        lexstate = "INITIAL";
         lexdata = data;
         lexlen = data.length;
     };
