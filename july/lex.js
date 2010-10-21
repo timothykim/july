@@ -118,6 +118,9 @@ july.lex = function (tokens) {
         lexstate = "INITIAL";
         lexdata = data;
         lexlen = data.length;
+        lexer.lineno = 1; // current line number
+        lexer.lexpos = 0; // current position number
+        lexregex = null;
     };
 
 
